@@ -1,22 +1,13 @@
-import { render } from "react-dom"
-import { BrowserRouter } from "react-router-dom"
-import { IntlProvider } from 'react-intl'
+import { render } from 'react-dom';
+import { BrowserRouter } from 'react-router-dom';
 
-// import the App container
-import App from './containers/App/App'
+import AppRouter from './AppRouter';
 
-// import utilities
-import './utils'
+const rootElement = document.querySelector('.wrapper');
 
-// define the root element
-const rootElement = document.querySelector(".wrapper")
-
-// render the application
 render(
-	<IntlProvider locale="en">
-		<BrowserRouter>
-			<App />
-		</BrowserRouter>
-	</IntlProvider>,
-	rootElement
-)
+    <BrowserRouter>
+        <AppRouter />
+    </BrowserRouter>,
+    rootElement
+);

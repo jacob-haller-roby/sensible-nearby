@@ -1,44 +1,26 @@
-# React Boilerplate
+# Sensible Nearby
 
-This boilerplate contains the basic features needed to start on a fresh react single page application.
+## TO RUN:
 
-## Features
+### Proxy Server
 
-- ~~Routing~~
-	- ~~Route Guards~~
-- ~~Layouts~~
-- ~~Languages~~
-- ~~Store~~
-- ~~React Native~~
+A proxy server is provided to manage calls to 3rd party APIs.
 
-## Installation
+In order to run the proxy server, you must provide a `.env` file containing the relevant google places API_KEY. The file should exist at `./proxy-server/.env`, and should match the provided `./proxy-server/.env.template` template.
 
-**Step 1. Install the dependencies**
+To start the server:
 
 ```
-npm install
+cd proxy-server
+npm i
+npm start
 ```
 
-**Step 2. Run build command**
+### React Server
 
-This compiles the JavaScript and SCSS/LESS files for production.
+A Development react server can be launched from the root of this project with the command:
 
 ```
-npm run build
-```
-
-Or you can run a development server on http://localhost:3000 through vite's development server using the following command:
-```
+npm i
 npm run dev
 ```
-
-# Requirements
-
-- Node.js
-- NPM
-
-## Depencencies
-
-- [React v17.x](https://github.com/facebook/react)
-
-<div align=center>Made with tons of ☕ and ❤️ by <a href="https://github.com/naviisml">Navi</a></div>
